@@ -1,0 +1,89 @@
+:root{
+    --heading-color:#141d22;
+    --heading-font: "Open Sans", sans-serif;
+    --paragraph-font:"Open Sans", sans-serif;
+}
+main{max-width: 900px;
+    margin :0 auto;
+}
+header {
+    background-color: #141d22;
+    display: flex;
+    justify-content: space-between; /* Pushes nav to far right */
+    align-items: center;
+    padding: 15px 20px; /* Adds spacing on sides */
+}
+
+header p {
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: var(--heading-color);
+    background-color: whitesmoke;
+}
+
+figure{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:10px;
+}
+
+main h1{
+    font-family: var(--heading-font);
+    color:#141d22;
+    text-align: center;
+}
+
+figure img {
+    width:250px;
+    height:200px;
+}
+
+.album{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.album ,caption{
+    font-family: var(--paragraph-font);
+    color: #141d22;
+}
+
+footer{
+    display:grid;
+    text-align:center;
+    background-color: #141d22;
+    color:whitesmoke;
+    font-family: var(--paragraph-font);
+}
+
+button{
+    display:none;
+}
