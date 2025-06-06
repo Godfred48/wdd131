@@ -21,11 +21,11 @@
         </div>
         <nav id="navMenu" class="open">
             <ul>
-                <li><a href="#" onclick="filteredTemple('home')">Home</a></li>
-                <li><a href="#" onclick="filteredTemple('old')">Old</a></li>
-                <li><a href="#" onclick="filteredTemple('new')">New</a></li>
-                <li><a href="#" onclick="filteredTemple('large')">Large</a></li>
-                <li><a href="#" onclick="filteredTemple('small')">Small</a></li>
+                <li><a href="#" onclick="event.preventDefault(); filteredTemple('home')">Home</a></li>
+                <li><a href="#" onclick="event.preventDefault(); filteredTemple('old')">Old</a></li>
+                <li><a href="#" onclick="event.preventDefault(); filteredTemple('new')">New</a></li>
+                <li><a href="#" onclick="event.preventDefault(); filteredTemple('large')">Large</a></li>
+                <li><a href="#" onclick="event.preventDefault(); filteredTemple('small')">Small</a></li>
             </ul>
         </nav>
     </header>
