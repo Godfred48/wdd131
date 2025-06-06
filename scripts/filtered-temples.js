@@ -5,21 +5,7 @@ menuButton.addEventListener('click',()=>{
     //toggle the button switching icon
     menuButton.classList.toggle('open');
     navMenu.classList.toggle('show');
-
-    // Toggle visibility of the nav menu
-//   if (navMenu.style.display === 'none' || navMenu.style.display === '') {
-//     navMenu.style.display = 'block';
-//   } else {
-//     navMenu.style.display = 'none';
-//   }
-
 });
-
-//
-
-
-
-
 
 //getting accurate year
 const currentyear=document.querySelector("#currentyear");
@@ -115,7 +101,6 @@ const temples = [
       },
   ];
 
-
   function displayTemple(templeArray){
   const container= document.getElementById("cardContainer");
   templeArray.forEach(temples=>{
@@ -124,8 +109,6 @@ const temples = [
     const dedicated=temples.dedicated;
     const area= temples.area;
     const img= temples.imageUrl;
-    
-
     const card = document.createElement("div");
     card.classList.add("album");
 
@@ -138,15 +121,9 @@ const temples = [
         </section>
         <aside class="pic">
          <img src="${img}" alt="${templeName}" loading="lazy" />
-        </aside>
-            
-        `
-
+        </aside>`
         container.appendChild(card);
-  }
-
-  )};
-
+  })};
 
   function filteredTemple(type) {
     let filtered = [];
