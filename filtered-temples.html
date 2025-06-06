@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A temple album that provide pictures of temples of the church of Jesus Christ of Latter-day Saints">
+    <meta name="author" content="Godfred Yao Agbogah">
+    <link rel ="stylesheet" href="./styles/filtered-temples-large.css">
+    <link rel ="stylesheet" href="./styles/filtered-temples.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <title>Temple Album</title>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <p>Temple Album</p>
+            <button id="menu"></button>
+        </div>
+        <nav id="navMenu" class="open">
+            <ul>
+                <li><a href="#" onclick="filteredTemple('home')">Home</a></li>
+                <li><a href="#" onclick="filteredTemple('old')">Old</a></li>
+                <li><a href="#" onclick="filteredTemple('new')">New</a></li>
+                <li><a href="#" onclick="filteredTemple('large')">Large</a></li>
+                <li><a href="#" onclick="filteredTemple('small')">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <figure id="cardContainer"></figure>
+    </main>
+
+    <footer>
+       <p>&copy; <span id="currentyear"></span> Godfred Agbogah . Accra- Ghana</p> 
+       <p id="lastModified"></p>
+    </footer>
+
+    <script src="./scripts/filtered-temples.js" defer></script>
+</body>
+</html>

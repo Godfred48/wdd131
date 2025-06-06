@@ -1,0 +1,89 @@
+@media (max-width : 768px) {
+  figure{
+     display:grid;
+     grid-template-columns: 1fr 1fr;
+     gap:10px;
+  }
+
+ #navMenu.show {
+   display: block;
+ }
+
+  .album{
+     display:grid;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ header {
+   background-color: #141d22;
+   display: block;
+   align-items: center;
+   padding: 15px 20px; /* Adds spacing on sides */
+ }
+
+ #navMenu{
+   display:none;
+ }
+
+ nav ul {
+   list-style-type: none;
+   display: block;
+   margin: 0;
+   padding: 0 auto;
+   text-align: center;
+}
+
+nav a {
+color: white;
+padding: 10px 10px;
+}
+
+#menu{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+
+ #menu::before{
+   content:"☰"
+ }
+
+ #menu.open::before{
+   content:"✖";
+ } 
+
+ button{
+   display:flex;
+   width: 50px;
+ }
+
+ .header1{
+   display:flex;
+   justify-content: space-between;
+   height:fit-content
+ }
+}
+
+
+@media (max-width : 640px) {
+figure{
+   display:grid;
+   grid-template-columns: 1fr;
+}
+
+.album{
+   display:grid;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+figure img {
+width:250px;
+height:200px;
+}
+}
