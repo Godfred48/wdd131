@@ -1,0 +1,54 @@
+:root{
+    --bodyBackground-color: black;
+    --heading-font: "Edu NSW ACT Cursive", cursive;
+    --paragraph-font:"Edu SA Hand", cursive;
+    --header-font-color:whitesmoke;
+    --paragraph-font-color:whitesmoke;
+}
+
+h1,h2,h3{
+    font-family: var(--heading-font);
+    color:var(--header-font-color);
+}
+
+h1 {
+    font-size: 2em;
+  }
+
+p{font-family: var(--paragraph-font);
+    color:var(--paragraph-font-color)
+}
+
+body{
+    background-color: var(--bodyBackground-color);    
+}
+
+main{
+    display:grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    height:auto;
+}
+
+ul{
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-font-color);
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width:100px;
+    height: 100px;
+}
