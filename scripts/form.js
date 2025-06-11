@@ -27,7 +27,7 @@ const products = [
 ];
 
 function DisplayProduct(productArray){
-    const productItem = document.getElementById("product");
+    const productName = document.getElementById("product");
 
     productArray.forEach( product=>{
         const name=  product.name;
@@ -37,7 +37,7 @@ function DisplayProduct(productArray){
 
         option.value = id;
         option.innerHTML =`<option value="${id}">${name}</option>`
-        productItem.appendChild(option);
+        productName.appendChild(option);
     })
 }
 DisplayProduct(products);
