@@ -1,0 +1,107 @@
+:root{
+    --heading-color:black;
+    --heading-font: "Edu NSW ACT Cursive", cursive;
+    --paragraph-font:"Edu SA Hand", cursive;
+}
+
+body{
+    background-color: black;
+}
+main{max-width: 900px;
+    margin :0 auto
+}
+header {
+    background-color:var(--heading-color);
+    display: flex;
+    justify-content: space-between; /* Pushes nav to far right */
+    align-items: center;
+    padding: 15px 20px; /* Adds spacing on sides */
+    border-bottom: 2px solid whitesmoke;
+}
+
+header p {
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    font-family: var(--paragraph-font);
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: var(--heading-color);
+    background-color: whitesmoke;
+}
+
+figure{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:15px;
+}
+
+main h1{
+    font-family: var(--heading-font);
+    color:whitesmoke;
+    text-align: center;
+}
+
+.cap{margin:0;}
+
+figure img {
+    width:100%;
+    height:auto;
+}
+
+.pic{
+    justify-content: center;
+    align-items: center;
+    display:grid;
+}
+
+.album{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    padding:10px;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+}
+
+.album ,caption{
+    font-family: var(--heading-font);
+    color: whitesmoke;
+}
+
+footer{
+    display:grid;
+    text-align:center;
+    background-color:var(--heading-color);
+    color:whitesmoke;
+    font-family: var(--paragraph-font);
+    border-top: 2px solid whitesmoke;
+}
+
+button{
+    display:none;
+}

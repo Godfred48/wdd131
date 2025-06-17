@@ -1,0 +1,227 @@
+:root{
+    --bodyBackground-color: black;
+    --heading-font: "Edu NSW ACT Cursive", cursive;
+    --paragraph-font:"Edu SA Hand", cursive;
+    --header-font-color:whitesmoke;
+    --paragraph-font-color:whitesmoke;
+    --header-background:whitesmoke;
+}
+
+body{
+    background-color: var(--bodyBackground-color);
+}
+main{
+    max-width: 900px;
+    margin:0 auto;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 2px solid whitesmoke;
+}
+
+footer{
+    display:grid;
+    text-align:center;
+    font-family:var(--paragraph-font);
+    color: var(--paragraph-font-color);
+    border-top:2px solid whitesmoke;
+
+}
+
+header img{
+    width:100px;
+    height:100px;
+    margin: 0 50px;
+}
+
+header ul{
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    color:var(--paragraph-font-color);
+    list-style: none;
+    align-items:center;
+    padding: 0;
+}
+
+header li{
+    display: flex;
+    align-items:center;
+    margin-right:20px;
+    padding : 10px 0;
+    font-family:var(--paragraph-font);
+}
+
+header li:hover{
+    background-color: var(--header-background);
+}
+
+header a{
+    text-decoration: none;
+    color:var(--paragraph-font-color);
+}
+
+header a:hover{
+    color:var(--bodyBackground-color);
+}
+
+
+.hero{
+    display:grid;
+    text-align:center;
+    color:var(--paragraph-font-color);
+    font-family:var(--heading-font);
+    margin-top:50px;
+}
+
+h1{
+    font-size: 2rem;
+}
+/* .image-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.image-container aside{
+    width:500px;
+    height:300px;
+    margin-left:70px;
+
+}
+
+.image-container img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:5px;
+} */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.image-container aside {
+    width: 100%;
+}
+
+/* .image-container img {CVBM,./
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+} */
+
+.image1, .image2 {
+    width: 100%;       /* or a fixed size like 400px */
+    height: auto;      /* or fixed ratio */
+    aspect-ratio: 4 / 3;  /* helps preserve space before loading */
+  }
+  
+
+button{
+    display:none;
+}
+
+
+@media (max-width:768px){
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px; /* Adds spacing on sides */
+      }
+      header img{
+        width:80px;
+        height:80px;
+        margin: 0;
+    }
+  
+    #menu{
+        display:flex;
+        justify-content: end;
+        align-items: center;
+        font-size: 2rem;
+        color:whitesmoke;
+    }
+    
+    #menu::before{
+        content:"☰"
+    }
+    
+    #menu.open::before{
+        content:"✖";
+    } 
+    button{
+        display:flex;
+        width: 50px;
+        background-color: black;
+        margin-left: 80%;
+        border:0;
+    }
+
+    #navMenu{
+        display:none;
+    }
+    #navMenu.show{
+        display:grid;
+    }
+
+  
+    nav ul {
+        list-style-type: none;
+        display: grid;
+        justify-content: start;
+        align-items: start;
+        padding: 0 auto;
+        text-align: center;
+    }
+
+    /* .image-container{
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-content:center;
+        align-items: center;
+        width:100%;
+        gap:10px;
+    }
+
+    .image-container aside{
+        width: 500px;
+        height:200px;
+        margin-right:20px;
+    
+    }
+
+    .image-container img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        border-radius:5px;
+    } */
+
+    .image-container {
+        grid-template-columns: 1fr; /* One column layout on smaller screens */
+    }
+
+}
+
+@media (max-width:640px){
+    
+    header a{
+    text-decoration: none;
+    color:var(--paragraph-font-color);
+   }
+
+
+}
+

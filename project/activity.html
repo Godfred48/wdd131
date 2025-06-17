@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 final projecct">
+    <meta name="author" content="Godfred Yao Agbogah">
+    <link rel ="stylesheet" href="./styles/activity-large.css">
+    <link rel ="stylesheet" href="./styles/activity.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+    <title>Activity</title>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <p>Activities</p>
+            <button id="menu" aria-label="Open navigation menu"></button>
+        </div>
+        <nav id="navMenu" class="open">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#" onclick="filteredActivity('all')">All</a></li>
+                <li><a href="#" onclick="filteredActivity('class')">Class Hours</a></li>
+                <li><a href="#" onclick="filteredActivity('contests')">Code Contest</a></li>
+                <li><a href="#" onclick="filteredActivity('robotics')">Robotics Practicals</a></li>
+                <li><a href="#" onclick="filteredActivity('awards')">Award</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Activity</h1>
+        <figure id="cardContainer"></figure>
+    </main>
+
+    <footer>
+       <p>&copy; <span id="currentyear"></span> Godfred Agbogah. Accra- Ghana</p> 
+       <p id="lastModified"></p>
+    </footer>
+
+    <script src="./scripts/activity.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+:root{
+    --heading-font: "Edu NSW ACT Cursive", cursive;
+    --paragraph-font:"Edu SA Hand", cursive;
+    --header-background-color:black;
+    --header-font-color:whitesmoke;
+    --form-background:black;
+}
+
+header{
+    background-color:var(--header-background-color);
+    padding: 5px;
+    text-align:center;
+}
+
+footer{
+    background-color:var(--header-background-color);
+    padding: 5px;
+    color:whitesmoke;
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+h1{
+    color:var(--header-font-color);
+    font-size:2rem;
+    font-family: var(--heading-font);
+}
+
+h2{
+    color:var(--header-background-color);
+    font-size:2rem;
+    font-family: var(--heading-font);
+}
+
+#review-counter{
+    font-family: var(--paragraph-font);
+    color: #000;
+    font-weight: bold;
+}
+
+main{
+    display:grid;
+    justify-content: center;
+    align-items:center;
+    margin:20px;
+}
+
+form{
+    display:grid;
+    padding:5px;
+    font-family:var(--paragraph-font);
+    background-color:var(--form-background);
+    color:whitesmoke;
+    max-width: 600px;
+    border: 1px solid whitesmoke;
+    margin : 20px auto;
+}
+ 
+#product{
+    height:40px;
+    margin-bottom:10px;
+}
+
+aside label{
+    margin-left:20px;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: whitesmoke; /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color:whitesmoke;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+#install-date{
+    height:40px;
+    margin-bottom:10px;
+    font-family: var(--paragraph-font);
+}
+
+#program{
+    height: 50px;
+    font-family: var(--paragraph-font);
+}
+.review{
+    display:grid;
+    margin-bottom: 10px;
+}
+
+#written-review{
+    height:100px;
+    margin-bottom:10px;
+    font-family: var(--paragraph-font);
+}
+
+#email{
+    height:50px;
+    font-family: var(--paragraph-font);
+}
+
+#username{
+    height:50px;
+    margin-bottom:10px;
+    font-family: var(--paragraph-font);
+}
+ 
+.submit{
+    font-size:2rem;
+    padding: 2px;
+}
+
+.submit:hover{
+    color:whitesmoke;
+    background-color:var(--header-background-color) ;
+}
+
+
+
+
+@media(max-width : 640px) {
+    main{
+        display:grid;
+        justify-content: center;
+        align-items:center;
+        margin:20px 0;
+    }
+}

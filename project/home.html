@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 final project">
+    <meta name="author" content="Godfred Agbogah">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    </noscript>
+    <title>NetCom Coding Club</title>
+</head>
+<body>
+    <header>
+        <img src="../images/logo.svg" alt="logo" loading="lazy">
+        <buttton id="menu"></buttton>
+        <nav id="navMenu" class="open">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="activity.html">Activities</a></li>
+                <li><a href="join_us.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <sectioN class="hero">
+            <h1>Welcome To NetCom Coding Club</h1>
+        </section>
+
+        <section class="image-container">
+            <aside>
+                <img src="../images/image1.webp" class="image1" alt="image1" loading="lazy">
+            </aside>
+            <aside>
+                <img src="../images/image2.webp" class="image2"  alt="image2" loading="lazy">
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Godfred Agbogah .. Accra- Ghana</p> 
+        <p id="lastModified"></p>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="./scripts/home.js"></script>
+</body>
+</html>

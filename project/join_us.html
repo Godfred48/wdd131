@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 final Project">
+    <meta name="author" content="Godfred Agbogah">
+    <link rel ="stylesheet" href="./styles/join_us.css">
+    <link rel ="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Join Us</title>
+</head>
+<body>
+    <header>
+        <img src="../images/logo.svg" alt="logo" loading="lazy">
+        <button id="menu" aria-label="Open navigation menu"></button>
+        <nav id="navMenu" class="open">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="activity.html">Activities</a></li>
+                <li><a href="join_us.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="./submit.html">
+            <!--field for name-->
+            <label for="username">Your Name *<span></span></label>
+            <input type="text" id="username" name="username" required>
+            <!--field for email-->
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+            <!--field for product name-->
+            <label for="program">Select Program *</label>
+            <select id="program" name="program" required>
+                <option value="" disabled selected>Select a program...</option>
+            </select>
+            <!--Field for rating -->
+            <label for="stars">Rate your experience in selected program*</label>
+            <fieldset class="stars">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5"  class="star-label"></label>
+
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4"  class="star-label"></label>
+
+                <input type="radio" id="star3" name="rating" value="3" >
+                <label for="star3"  class="star-label"></label>
+
+                <input type="radio" id="star2" name="rating" value="2" >
+                <label for="star2"  class="star-label"></label>
+
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1"  class="star-label"></label>
+            </fieldset>
+            <!--Field for date-->
+            <label for="install-date">Date of Registration*</label>
+            <input type="date" id="install-date" name="install-date" required>
+            <!--field for review-->
+            <fieldset class="review">
+                <caption>Which aspect will this program help you?(Check all the apply)</caption>
+                <aside class="check">
+                    <input type="checkbox" id="confidence" name="confidence" value="confidence">
+                    <label for="confidence">Confidence</label>
+                </aside>
+                <aside class="check">
+                    <input type="checkbox" id="experience" name="experience" value="experience">
+                    <label for="experience">Experience</label>
+                </aside>
+                <aside class="check">
+                    <input type="checkbox" id="performance" name="performance" value="performance">
+                    <label for="performance">Performance</label>
+                </aside>
+                <aside class="check">
+                    <input type="checkbox" id="intellgence" name="intelligence" value="intelligence">
+                    <label for="intelligence">Intelligence</label>
+                </aside>
+            </fieldset>
+            <!--field for comment-->
+            <label for="written-review">How do you think this program helping you?:<span>(Optional)</span></label>
+            <textarea id="written-review" name="written-review"></textarea>
+            
+            <!--field for submit-->
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Godfred Agbogah . Accra- Ghana</p> 
+        <p id="lastModified"></p>
+     </footer>
+    <script src="./scripts/home.js"></script>
+    <script src="./scripts/join_us.js"></script>
+    <script src="../scripts/getdates.js"></script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/join_us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+   
+    <title>Form Review</title>
+</head>
+<body>
+    <main class="review">
+        <h2>Thank you for Joining us! Your submission  will be reviewed.</h2>
+        <p id="review-counter"></p>   
+    </main>
+    <script>
+        // Get current count from localStorage or set to 0 if not present
+        let reviewCount = localStorage.getItem('reviewCount');
+
+        if (!reviewCount) {
+        reviewCount = 0;
+        }
+
+        // Convert to number and increment
+        reviewCount = parseInt(reviewCount) + 1;
+
+        // Save it baack to localStorage
+        localStorage.setItem('reviewCount', reviewCount);
+
+        document.addEventListener('DOMContentLoaded', () => {
+        const counterDisplay = document.getElementById('review-counter');
+        if (counterDisplay) {
+            counterDisplay.textContent = `You've submitted ${reviewCount} forms for review.(s).`;
+        }
+        });
+
+    </script>
+</body>
+</html>
